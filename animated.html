@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .svg1 {
+        margin-left: 10VW;
+        height: 55vh;
+        width: 40vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+   .svg1:hover #Group1 {
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    transition: 1s linear;
+    animation-timing-function: ease;
+    pointer-events: all;
+    transform-origin: 0deg;
+
+}
+
+/* .sec1 svg #Group1{
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    transition: 3s linear ;
+    animation-timing-function: ease;
+    pointer-events: all;
+    animation-delay: 5s;
+
+   } */
+ svg #Ellipse2 {
+    animation: blink 3s ease-in-out;
+    animation-iteration-count: infinite;
+  
+}
+
+svg #Ellips1 {
+
+   
+}
+
+@keyframes animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(-2deg), translateX(10px);
+
+
+    }
+
+    30% {
+        transform: rotate(-5deg);
+
+    }
+
+
+
+
+    90% {
+        transform: rotate(0deg);
+
+
+    }
+
+    95% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+           transform: rotate(0deg);
+         } 
+}
+
+@keyframes blink {
+
+    10%,
+    20%,
+    30% {
+        transform: translateX(10px);
+
+    }
+
+    40%,
+    50%,
+    60% {
+        fill: #ff689e;
+        transform: translateX(-10px);
+    }
+
+    70%,
+    80%,
+    100% {
+        fill: #ff689e;
+        transform: translateX(0);
+    }
+}
+
+
+
+    
+    </style>
+<body>
+    <svg id="svga" class="svg1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 240 246" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+        <g id="Polygon 2" transform="translate(-.430017-.629986)">
+            <path
+                d="M22.0271,3.23312c.3573-2.656599,3.7539-3.546703,5.3682-1.4068L148.374,162.193c1.491,1.977.081,4.807-2.395,4.807h-142.54848c-1.81575,0-3.215267-1.6-2.973223-3.4L22.0271,3.23312Z"
+                fill="#9cdf0a" />
+            <path
+                d="M22.0271,3.23312c.3573-2.656599,3.7539-3.546703,5.3682-1.4068L148.374,162.193c1.491,1.977.081,4.807-2.395,4.807h-142.54848c-1.81575,0-3.215267-1.6-2.973223-3.4L22.0271,3.23312Z"
+                fill="#e95e90" />
+        </g>
+        <g id="Group 1" transform="matrix(.95479 0 0 1 7.10335-2.999998)">
+            <path id="Rectangle 5"
+                d="M30,55h205.26c1.624,0,2.435,0,3.06.3059.598.2929,1.081.7764,1.374,1.3743.306.6244.306,1.4362.306,3.0598v63.52c0,1.624,0,2.435-.306,3.06-.293.598-.776,1.081-1.374,1.374-.625.306-1.436.306-3.06.306L30,128v-73Z"
+                fill="#fbaf60" />
+            <circle id="Ellipse1" r="38.5" transform="translate(190.5 107.5)" fill="#4365df" />
+            <path id="Polygon 4" d="M231,148l7.794-20.25h-15.588L231,148Z" fill="#d9d9d9" />
+            <path id="Polygonn 7" d="M150,148l7.794-20.25h-15.588L150,148Z" fill="#d9d9d9" />
+            <circle id="Ellipse2" cx="203" cy="108" r="17" fill="#ff689e"></circle>        </g>
+        <g id="Group 2" transform="translate(-1.206-1.384365)">
+            <rect id="Rectangle 2" width="80" height="79" rx="0" ry="0" transform="matrix(-1 0 0-.996951 160 246.000054)"
+                fill="#fbaf60" />
+            <rect id="Rectangle 2" width="80" height="79" rx="0" ry="0" transform="matrix(-1 0 0-1 80 246)" fill="#4365df" />
+            <path id="Rectangle 1" d="M240,246h-80v-79h77c1.657,0,3,1.343,3,3v76Z" fill="#ff689e" />
+            <path id="Polygon 3" d="M224.5,147l9.959,20.25h-19.918L224.5,147Z" fill="#d9d9d9" />
+            <path id="Polygon 5" d="M197.5,147l9.959,20.25h-19.918L197.5,147Z" fill="#d9d9d9" />
+            <path id="Polygon 6" d="M170.5,147l9.959,20.25h-19.918L170.5,147Z" fill="#d9d9d9" />
+            <g id="Polygon 1" transform="matrix(1 0 0 1.003191 0-.282832)">
+                <path d="M0,13.2747C0,10.5975,3.24074,9.261,5.12792,11.16L160,167h-160L0,13.2747Z" fill="#bcfc32" />
+                <path d="M0,13.2747C0,10.5975,3.24074,9.261,5.12792,11.16L160,167h-160L0,13.2747Z" fill="#ff689e" />
+            </g>
+        </g>
+    </svg>
+
+</body>
+
+</html>
+

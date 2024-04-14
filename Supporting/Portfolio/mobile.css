@@ -1,0 +1,507 @@
+:root {
+    --primary: #9812ee;
+    --secondary: #f6cc7f;
+    --accent: #bcfc32;
+    --back: #f9f0fe;
+    --text: #09010d;
+    --sansR: 'Sofia Sans', sans-serif;
+    --slab: 'Roboto Slab', serif;
+    --sansC: 'Sofia Sans Condensed', sans-serif;
+    --textS: #09010d62;
+    --arial: Arial, Helvetica, sans-serif;
+
+}
+html{
+    
+}
+body {
+    background: url(bbblurr.svg);
+    scroll-snap-type: proximity;
+    scroll-behavior: smooth;
+    background-size:cover;
+    background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+
+}
+
+.head {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-bottom: 10vh;
+}
+.menu-icon{
+    display: block;
+    position: absolute;
+    right: 3vw;
+}
+.nav {
+    width:20vw;
+    display: none;
+    margin-left:25vw;
+   position: absolute;
+    flex-direction: column;
+    gap: 1vh;
+    justify-content: center;
+align-items: center;
+left: 45vw;
+background-color: var(--back);
+padding: 3%;
+border-radius: 1rem;
+backdrop-filter: blur(10px);
+z-index: 1;
+
+}
+
+.nava {
+    margin-left: 0vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nava a {
+    text-decoration: none;
+    color: var(--text);
+    font-family: var(--sansR);
+    font-size: 1.2rem;
+   
+}
+
+.logo {
+
+    margin-left: 1vw;
+    font-size: calc(1rem + 1vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--slab);
+    color: var(--text);
+}
+
+.logo span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent);
+    padding-top: 1px;
+    margin-right: .5vw;
+}
+
+.sec1 {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4vw;
+    flex-direction: column-reverse;
+    height: 45vh;
+}
+
+.sec1 .svg1 {
+    display: none;
+}
+
+.sec1 .svg2 {
+    margin-left: 0VW;
+    height: 60vh;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.3);
+    pointer-events: all;
+}
+
+.bio {
+    font-size: 3rem;
+    font-family: var(--sansR);
+    height: 50vh;
+    width: 80vw;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+    flex-direction: column;
+}
+
+.bio p {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    
+        text-align: center;
+    
+}
+
+.bio span {
+    color: var(--primary);
+    font-size: calc(4rem);
+
+}
+
+.Homepage {
+    margin-left: 4vw;
+}
+
+hr {
+    width: 90vw;
+    border: .5px solid var(--accent);
+    border-radius: 3px;
+}
+
+.work {
+    margin-top: 30vh;
+    animation-name: fadein;
+    transition: 1s ease-in;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-duration: 3s;
+}
+
+.txts {
+    display: flex;
+    flex-direction: column;
+}
+
+.p1 {
+    font-size: calc(2.5rem + 1vw);
+    font-family: var(--sansR);
+    margin-left: 0vw;
+    list-style: decimal;
+    margin-bottom: 0;
+    display: inline;
+    flex-direction: column;
+}
+
+.des {
+    font-size: calc(1rem + 1vw);
+    color: var(--text);
+    width: 80vw;
+    margin-left: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--arial);
+    flex-direction: column;
+
+
+}
+
+.ttl .p2 {
+    font-size: .8rem;
+    color: var(--textS);
+    font-family: var(--slab);
+    width: 80vw;
+    text-align: left;
+    margin-left: 11vw;
+    margin-top: 0;
+}
+
+.ttl ul {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.des h3 {
+    margin-top: 0;
+}
+
+.des a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0vh;
+    color: var(--text);
+    font-weight: 200;
+    font-size: 1rem;
+    font-family: var(--sansR);
+}
+
+.des svg {
+    display: none;
+}
+
+.img1 {
+    height: 70vh;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    display: none;
+}
+
+.img2 {
+    height: 80vh;
+    width: 90vw;
+    margin-left: 3vw;
+    margin-top: 5vh;
+    aspect-ratio: 16/8;
+    display: block;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.434);
+
+}
+
+.more {
+    font-size: calc(3rem + 1vw);
+    font-family: var(--sansR);
+    height: 50vh;
+
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.des a button {
+    padding: 1vh;
+    font-family: var(--sansR);
+    background-color: var(--accentS);
+    color: var(--textSc);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 1px 1px 70px var(--primaryS);
+    transition: 1s ease-in-out;
+    margin: 0vh;
+    pointer-events: none;
+
+}
+
+
+
+
+
+.sec101 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4vw;
+    margin-left: 0vw;
+    background-color: #ffffff8a;
+backdrop-filter: blur(5px);
+
+border-radius: 1rem;
+padding: 5%;
+
+}
+   
+.bio1 {
+    font-size: 2rem;
+    font-family: var(--sansR);
+    /* height: 50vh; */
+    width: 80vw;
+    margin-top: 0vh;
+    display: flex;
+
+    line-height: normal;
+    flex-direction: column;
+}
+
+.textbio {
+    font-size: calc(1rem + 1vw);
+    color: var(--text);
+    width: 80vw;
+    margin-left: 0vw;
+    display: flex;
+
+    font-family: var(--arial);
+    flex-direction: column;
+
+}
+
+.Homepage1 {
+    padding-bottom: 0vh;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+
+}
+
+.whatilike {
+    h3 {
+        font-size: 1.5rem;
+        font-family: var(--sansR);
+        margin-bottom: 1vh;
+        margin-left: 0;
+    }
+
+    ul {
+        font-size: 1.2rem;
+        font-family:Arial, Helvetica, sans-serif;
+        flex-direction: column;
+        display: flex;
+        
+    }
+
+    justify-content: right;
+    align-items: center;
+    margin-top: 5vh;
+    margin-left: 0vw;
+
+    .whtil {
+        background-color: rgba(255, 255, 255, 0.505);
+        backdrop-filter: blur(5px);
+        color: #000000;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 4%;
+        margin-bottom: 3vh;
+        justify-content: center;
+        border-radius: .7rem;
+        align-items: center;
+        width: 80vw;
+    }
+
+    li {
+        margin-left: 4vw;
+        list-style: none;
+        padding: 1px;
+    }
+}
+
+
+
+.image{
+    margin-left: 0vw;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+
+}
+
+
+.sec1 .svg2 #Ellipse6 {
+    animation: blink 3s ease-in-out;
+    animation-iteration-count: infinite;
+    position: absolute;
+    animation-delay: 1s;
+}
+
+.sec1 .svg2 #Ellipse5 {
+    animation: blink 3s ease-in-out;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+@keyframes animation {
+    10% {
+        transform: rotate(-2deg), translateX(10px);
+
+
+    }
+
+    30% {
+        transform: rotate(-5deg);
+
+    }
+
+
+
+
+    90% {
+        transform: rotate(1deg);
+
+
+    }
+
+    95% {
+        transform: rotate(0deg);
+
+    }
+
+    /* 100% {
+           transform: rotate(0deg);
+         } */
+}
+
+@keyframes blink {
+
+    10%,
+    20%,
+    30% {
+        transform: translateX(10px);
+
+    }
+
+    40%,
+    50%,
+    60% {
+        fill: #b0eb2f;
+        transform: translateX(-10px);
+    }
+
+    70%,
+    80%,
+    100% {
+        fill: #9CDF0A;
+        transform: translateX(0);
+    }
+}
+@keyframes bite{
+    10% {
+       transform: translateY(3vh);
+
+
+    }
+
+    /* 50% {
+        transform: translateY(5vh);
+    }
+
+
+
+
+    90% {
+        transform: translateY(3vh);
+
+
+    } */
+
+    100% {
+        transform: translateY(0vh);
+
+    }
+    /* 100% {
+        transform: rotate(0deg);
+    } */
+}
+.sec1 .svg2:active #Group3 {
+    animation: bite 1s ease-in-out;
+    animation-iteration-count: 1;
+    transition: 2s ease;
+   
+}

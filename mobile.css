@@ -1,0 +1,218 @@
+@media only screen and (max-width: 600px) {
+
+    body {
+        margin: 1vw;
+    }
+
+    #Home {
+        background: url(llline.svg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #load {
+
+        letter-spacing: 2px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-family: "Madimi One", sans-serif;
+        }
+    }
+
+    .barOut {
+        width: 80vw;
+        height: 1.3rem;
+        border: 0px solid #f59470;
+    }
+
+    .Barin {
+        margin: 0;
+        height: 100%;
+        background: linear-gradient(to right, #FFD966, hsl(316, 73%, 52%));
+        animation: loader 6s linear 1;
+    }
+    #main{
+        animation: showup 1s ease-in-out 0s 1 ;
+    }
+    .homes {
+
+        flex-direction: column;
+
+        .art {
+            img {}
+
+            display: none;
+        }
+
+        .bs {
+            margin-left: 10vw;
+
+            span {
+                text-shadow: 0px 0px 20px hsla(328, 100%, 42%, 0.306);
+            }
+
+            h1 {
+                margin-top: 0;
+
+                width: 90vw;
+            }
+        }
+    }
+
+    #Work {
+        background-size: 50rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        margin: 0;
+
+        .maincontent {
+            display: flex;
+            margin-left: 0;
+
+            .cards {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                width: 25rem;
+            }
+        }
+    }
+
+    .workbs {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+
+        img {
+            display: none;
+        }
+
+        h1 {
+            width: 90vw;
+            margin: 0;
+            text-align: justify;
+        }
+    }
+
+    .float {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        z-index: 0;
+        padding-left: 0;
+        margin-top: 20vh;
+
+        .about {
+            width: 80vw;
+            height: 100vh;
+        }
+
+        .whatilike {
+            width: 20rem;
+            font-size: 1.4rem;
+        }
+
+        .whatihate {
+            width: 20rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin-top: 20vh;
+        background-size: 30rem;
+        background: url(bhsd.svg);
+
+        .logo {
+            h1 {
+                font-size: 1.3rem;
+            }
+        }
+
+        .contactitems {
+            display: flex;
+            flex-direction: row;
+
+            .items {
+                img {
+                    width: 2rem;
+                    height: 2rem;
+                }
+
+                i {
+                    margin-top: 10px;
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                    margin-top: 0;
+                    display: none;
+                }
+
+                a {
+                    height: 3rem;
+                    width: 3rem;
+                    background-color: transparent;
+                    border: none;
+
+                }
+            }
+
+        }
+    }
+.nav a{
+    width: auto;
+}
+    #About {
+        background-size: 30rem;
+        background-attachment: fixed;
+        margin-bottom: 10vh;
+    }
+
+    .card1 {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding-left: 4rem;
+    }
+}
+
+@keyframes showup {
+    from{
+        margin-top: 0vh;
+        filter: blur(6px);
+    }
+    to{
+        margin-top: 0;
+        filter: blur(0px);
+    }
+    
+}

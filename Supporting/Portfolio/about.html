@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 701px) and (max-width: 900px)" href="example2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Sofia+Sans+Condensed:wght@400;500&family=Sofia+Sans:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Untitled (3).svg">
+    <title>OZsumit</title>
+    <script src="https://kit.fontawesome.com/b80a054d9d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="head">
+        <div class="logo">
+    
+          <a href="index.html">OZSUMIT</a>
+        </div>
+        <div class="menu-icon" style="margin-left: 35vh;scale: 1.5;">
+          <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      </div>
+     
+    
+        <div class="nav" id="nav">
+          <i id="close-button" class="fa-regular" onclick="toggleMenu()" style="margin-left: 50vw;
+          z-index: 1;
+          scale: 1.5;
+          color: rgb(255, 0, 0);
+    margin: 0;
+          background: transparent;
+          border-radius: 2rem;
+          display: none;
+    margin-left: 0;
+        
+         
+          
+        
+          cursor: pointer;">&#xf057;</i>
+          <div class="nava"><a href="##" style="color: var(--primary);">Home</a></div>
+          <div class="nava"><a href="#work">Work</a></div>
+          <div class="nava"><a href="about.html">About</a></div>
+        </div>
+      </div>
+    <section class="Homepage1">
+        <div class="sec101">
+            <div class="bio1">
+                <p>
+           
+                I'm Sumit, a
+                frontend web developer</p>
+            </div>
+            <div class="textbio">
+                Hey there, I'm Sumit, a  frontend web developer and designer based in Nepal       with a passion for creating seamless and delightful user experiences. I especially enjoy working on design operations and systems that help bring order to complexity.
+<br>
+<br>
+<br>
+When I'm not designing, you can find me  watching reelss on instagram or watching anime like Jujutsu kaise(P.S most reccomended). Thanks for stopping by my portfolio!
+            </div>
+          </div>
+       <div class="whatilike">
+                    <div id="whtilij" class="whtil ">
+                        <h3>What i like</h3>
+                        <ul>
+                            <li>Anime</li>
+                            <li>Tech</li>
+                            <li>Holiday</li>
+                        </ul>
+                    </div>
+                    <div class="whtil">
+                        <h3>What i love</h3>
+                        <ul>
+                            <li>You❤️❤️</li>
+                            <li>Music</li>
+                            <li>Not going to school</li>
+                        </ul>
+                    </div>
+                    <div class="whtil">
+                        <h3>What i Hate</h3>
+                        <ul>
+                            <li>You💀💀</li>
+                            <li>Summer</li>
+                            <li>School</li>
+                        </ul>
+                    </div>
+                </div></section>
+    <section class="contact" class="contact">
+        <h1>
+            Contacts
+        </h1>
+        <div class="anchor">
+            <a href="https://www.instagram.com/ozsumit_/">Instagram</a>
+            <a href="https://www.snapchat.com/add/sumit-o23?share_id=Fj2zbazzBTM&locale=en-GB">Snapchat</a>
+            <a href="https://www.facebook.com/Ozsumit/">Facebook</a>
+
+    </section>
+    <footer>
+        <div>
+
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var menuIcon = document.querySelector('.menu-icon');
+        var sidenav = document.getElementById('nav');
+        var closeButton = document.getElementById('close-button');
+  
+        menuIcon.addEventListener('click', function () {
+            sidenav.style.display = 'flex';
+            closeButton.style.display = 'flex';
+            menuIcon.style.display= 'none';
+        });
+  
+        closeButton.addEventListener('click', function () {
+            sidenav.style.display = 'none';
+            closeButton.style.display = 'none';
+            menuIcon.style.display= 'flex';
+        });
+    });
+  </script>
+
+
+</html>

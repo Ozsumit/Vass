@@ -1,0 +1,20 @@
+:root {
+  --primary: #9812ee;
+  --secondary: #f6cc7f;
+  --accent: #bcfc32;
+  --back: #f9f0fe;
+  --text: #09010d;
+  --sansR: 'Sofia Sans', sans-serif;
+  --slab: 'Roboto Slab', serif;
+  --sansC: 'Sofia Sans Condensed', sans-serif;
+  --textS: #09010d8a;
+  --arial: Arial, Helvetica, sans-serif;
+  --textSc: #270438c3;
+  ;
+  --primaryS: #9a12eeae;
+  --accentS: #c0ff37;
+  --textW: #ffffffea;
+  --primaryL: #a225f0db;
+
+
+}
